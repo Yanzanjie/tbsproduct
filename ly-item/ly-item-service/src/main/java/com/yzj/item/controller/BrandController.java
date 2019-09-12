@@ -40,7 +40,7 @@ public class BrandController {
 
     //品牌添加
     @PostMapping
-    public ResponseEntity<Void> saveBrand(Brand brand, @RequestParam("cids") List<Long> cids){
+    public ResponseEntity<Void> saveBrand(Brand brand, @RequestParam("cids1") List<Long> cids){
         this.brandService.saveBrand(brand, cids);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
