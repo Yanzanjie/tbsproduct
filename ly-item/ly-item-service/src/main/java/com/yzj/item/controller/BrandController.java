@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -24,6 +25,7 @@ public class BrandController {
 
     //获取品牌
     @GetMapping("page")
+    @ResponseBody
     public ResponseEntity<PageResult<Brand>> queryBrandsByPage(
             @RequestParam(value = "key", required = false)String key,
             @RequestParam(value = "page", defaultValue = "1")Integer page,

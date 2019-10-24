@@ -17,7 +17,6 @@
     <packaging>pom</packaging>
 
     <name>ly</name>
-    <description>Demo project for bs</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
